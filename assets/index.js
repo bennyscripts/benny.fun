@@ -16,3 +16,7 @@ images.forEach((image) => {
         window.open(image.src, '_blank').focus();
     })
 })
+
+if (navigator.userAgent.includes("Firefox")) {
+    alert("This website is best viewed on a Chromium based browser. E.g Chrome, Edge, Brave, etc.")
+}
